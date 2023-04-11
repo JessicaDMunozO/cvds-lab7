@@ -32,15 +32,14 @@ spring.jpa.hibernate.ddl-auto=create-drop
 Por último en la clase *Employee* se completa el constructor y se crea un constructor vacío en caso de no recibir parámetros.
 
 ```
-public Employee() {
-    }
+public Employee() {}
 
-    public Employee(String string, String string2, String string3, double d) {
+public Employee(String string, String string2, String string3, double d) {
         this.firstName = string;
         this.lastName = string2;
         this.role = string3;
         this.salary = d;
-    }
+}
 ```
 
 Al ejecutar la aplicación muestra la creación de los usuarios y las consultas sobre la base de datos sin ningún error. Por ende la conexión 
